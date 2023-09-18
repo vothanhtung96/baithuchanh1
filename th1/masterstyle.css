@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*top menu*/
+.aside {
+    width: 10%;
+}
+
+    .aside.left, .aside.right {
+        width: 20%;
+    }
+
+#top-menu {
+    height: 64px;
+    background-color: dimgray;
+    padding-left: 20px;
+}
+
+.aside.left, .menu-nav, .aside.right {
+    height: 100%;
+}
+
+#top-menu .aside.left {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#top-menu .menu-nav {
+    width: 60%;
+    float: left;
+    line-height: 64px;
+}
+
+#top-menu .aside.right {
+    float: right;
+}
+
+.aside.right ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+    .aside.right ul li {
+        list-style-type: none;
+    }
+
+ul li i {
+    color: lightgray;
+    font-size: 20px;
+}
+
+.aside.right ul li div {
+    display: inline-block;
+}
+
+li div img {
+    width: 20px;
+}
+
+ul li:nth-child(2) {
+    position: relative;
+}
+
+li:nth-child(2) div {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    bottom: 0;
+    right: -5px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.menu-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .menu-nav ul li {
+        list-style-type: none;
+    }
+
+        .menu-nav ul li a {
+            padding: 22px 16px;
+            font-size: 16px;
+            color: lightgray;
+            transition: background-color 0.15s, color 0.15s;
+        }
+
+        .menu-nav ul li:hover a {
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+            width: 50%;
+        }
+
+.aside.left .logo_shopdunk img {
+    width: 56%;
+}
+
+.logo_shopdunk {
+    height: 60px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/*slider*/
+#slider {
+    height: 60px;
+    background-color: aquamarine;
+}
+/*content*/
+#main-content {
+    height: 400px;
+    background-color: brown;
+}
+
+.aside.l, .aside.r {
+    background-color: antiquewhite;
+    height: 100%;
+}
+
+.aside.l, .container {
+    float: left;
+}
+
+.aside.r {
+    float: right;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+}
+
+    .container .head_container {
+        height: 80%;
+        background-color: rebeccapurple;
+        width: 100%;
+    }
+
+    .container .tail_container {
+        height: 20%;
+        background-color: orangered;
+    }
+/*footer*/
+#footer {
+    height: 200px;
+    background-color: dimgray;
+}
